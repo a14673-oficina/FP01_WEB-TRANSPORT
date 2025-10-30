@@ -1,0 +1,136 @@
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Prático 3</title>
+    <link rel="icon" type="image/png" href="https://images.seeklogo.com/logo-png/4/2/ep-logo-png_seeklogo-48289.png"> <!--É o que adiciona o icon na tab do navegador-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet"> -->
+   <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6 /* espaçamento de linhas */;
+        }
+
+        .pagina {
+            display: grid;
+            grid-template-areas:
+                "header"
+                "main"
+                "footer";
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        
+        }
+
+        header { grid-area: header; }
+        main { grid-area: main; }
+        footer { grid-area: footer; }
+
+        .equipa {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: #f8c0c0;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .membro {
+            background: rgb(255, 241, 241);
+            border: 1px solid #a80303;
+            border-radius: 30px;
+            padding: 20px;
+        }
+        .buttonnav{
+            background: rgb(250, 206, 206);
+            border: 1px solid #a80303;
+            border-radius: 10px;
+            padding: 7px;
+            color: black;
+        }
+
+        .membro img {
+            width: 100px;
+            border-radius: 50px;
+        }
+
+        .membro h3 {
+            margin-top: 50px;
+            color: #fd0d0d;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fd0d0d;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 20px;
+        }
+
+        header nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #200707;
+            color: white;
+            padding: 10px;
+             border-radius: 20px;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <div class="pagina">
+        <header>
+            <h1>Projetos</h1>
+            <nav>
+                <a class="buttonnav" href="index.html">Início</a>
+                <a class="buttonnav" href="#">Projetos</a>
+                <a class="buttonnav" href="contactos.html">Contacto</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="equipa">
+                <div class="membro">
+                    <img src="https://img.freepik.com/fotos-gratis/retrato-de-empresaria-de-sucesso-sorridente-olhando-para-a-camera-sentada-no-restaurante-mulher-de-negocios-com-penteado-elegante-usa-terno-elegante-reuniao-de-negocios-aparencia-atraente_8353-12611.jpg?semt=ais_hybrid&w=740&q=80" alt="Foto de Ana">
+                        <h3>Ana Costa</h3>
+                        <p>A Gestora de projetos, organiza os projetos.</p>
+                        
+                </div>
+                <div class="membro">
+                    <img src="https://thumbs.dreamstime.com/b/foto-do-perfil-incorporado-de-um-homem-de-neg%C3%B3cios-profissional-45082954.jpg" alt="Foto de Rui">
+                    <h3>Rui Pereira</h3>
+                    <p>O programador dos projetos e também do site e da empresa</p>
+                </div>
+                <div class="membro">
+                    <img src="https://static.vecteezy.com/ti/fotos-gratis/t1/38894358-ai-gerado-o-negocio-mulher-feliz-confiante-positivo-femea-empreendedor-foto.jpg" alt="Foto de Sofia">
+                 <h3>Sofia Marques</h3>
+                    <p>Criar ou atualiza a aparencia do projetos, do site ou aplicativos da empresa</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Equipa de Projetos</p>
+        </footer>
+    </div>
+</body>
+</html>
